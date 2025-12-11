@@ -6,7 +6,7 @@ fn main() {
 
     // But we can enforce a type different from the default `i32` by adding
     // a type annotation:
-    // let x: u8 = 42;
+    let x: u8 = 42;
 
     if x == 10 {
         println!("x is ten!");

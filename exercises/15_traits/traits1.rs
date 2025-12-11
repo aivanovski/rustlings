@@ -1,3 +1,6 @@
+use std::fmt::format;
+use std::io::SeekFrom;
+
 // The trait `AppendBar` has only one function which appends "Bar" to any object
 // implementing this trait.
 trait AppendBar {
@@ -6,6 +9,10 @@ trait AppendBar {
 
 impl AppendBar for String {
     // TODO: Implement `AppendBar` for the type `String`.
+
+    fn append_bar(self) -> String {
+        self + "Bar"
+    }
 }
 
 fn main() {
